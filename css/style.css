@@ -1,0 +1,245 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 2.0;
+    padding:0;
+    margin:0;
+
+}
+.neat{
+    /* background-image: url('../image/to_do_list_logo2.jpg'); */
+    background-color:slategray;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+    overflow: hidden;
+}
+
+.container{
+    width: 80%;
+    margin:auto;
+    overflow:hidden;
+}
+
+header{
+    background-color:darkslategray;
+    color: white;
+    padding-top: 10px;
+    min-height: 40px;
+}
+header a{
+    color:black;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header li{
+    display: inline;
+    padding:0 20px 0 20px;
+}
+
+header #heading{
+    float: left;
+}
+header nav{
+    float: right;
+    margin-top: 20px;
+}
+
+#showcase{
+    min-height: 500px;
+    text-align: center;
+    background-image: url(../image/to_do_list_logo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    color:black;
+}
+#showcase h1{
+    font-size: 55px;
+}
+#showcase p{
+    font-size: 20px;
+    color:darkred;
+}
+
+footer{
+    text-align: center;
+    color:black;
+}
+
+.loginbox{
+    width:420px;
+    min-height:420px;
+    background:honeydew;
+    color:black;
+    top:40%;
+    left:50%;
+    position:absolute;
+    transform:translate(-50%,-50%);
+    box-sizing:border-box;
+    padding:70px 30px;
+    margin-top:70px;
+}
+.loginbox h1{
+    margin:0;
+    padding:0 0 20px;
+    text-align:center;
+    font-size: 22px;
+
+}
+.loginbox p{
+    margin:0;
+    padding:0;
+    font-weight:bold;
+}
+.loginbox input{
+    width:100%;
+    margin-bottom:20px;
+}
+.loginbox input[type="submit"]{
+    border:none;
+    outline:none;
+    height:40px;
+    background:brown;
+    color:white;
+    font-size:18px;
+    border-radius:20px;
+}
+.loginbox a{
+    text-decoration:none;
+    font-size:12px;
+    line-height:20px;
+    color:darkblue;
+}
+.login a:hover{
+    color:black;
+}
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  
+button:hover {
+    opacity:1;
+}
+  
+.cancelbtn .signupbtn {
+    padding: 14px 20px;
+
+}
+
+.cancelbtn .signupbtn {
+    float: left;
+}
+  
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+      width: 100%;
+    }
+}
+.bilbox{
+    width:420px;
+    min-height: 570px;
+    background:honeydew;
+    color:black;
+    position:relative;
+    box-sizing:border-box;
+    padding:30px 30px;
+    margin:8px auto auto auto;
+    margin-top: 35px;
+}
+
+.bilbox h1{
+    margin:0;
+    padding:0 0 20px;
+    text-align:center;
+    font-size: 22px;
+}
+.bilbox input{
+    width:100%;
+    margin-bottom:20px;
+}
+.new {
+    box-sizing: border-box;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+ul li:nth-child(odd) {
+    background:slategrey;
+}
+
+ul li:hover {
+    background:slategray;
+}
+
+.header {
+    background-color: lightseagreen;
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+}
+
+.header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+input {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+}
+
+.addBtn {
+    padding: 5px;
+    width: 20%;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+}
+
+.addBtn:hover {
+    background-color: #bbb;
+}
+@media only screen and (max-width:320px){
+    div .bilbox{
+        width:100%;
+    }
+    div .bilbox h1{
+        float:left;
+    } 
+    div .bilbox p{
+        float: left;
+    } 
+    div .bilbox input{
+        width:100%;
+    }
+}
