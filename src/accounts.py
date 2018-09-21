@@ -6,22 +6,23 @@ accounts = {}# dictionary where key is the  password and value is User
 
 
 def add_account(name, password):
-    name = input("Enter your name: ")
-    password = input("Enter your password:")
     accounts[password] = name
     accounts.update({password:name})
-    return accounts
-
+    print(accounts)
 
 def login(name, password):
-    for key,value in accounts.items():
-        if key == password and value == name:
-            return True
-        else 
-            print("This username doesn't match with the password")
-    else
-        add_account(name, password)
+    print("Login")
+    name = input("Enter your name: ")
+    password = input("Enter your password:")
+
+    key, value = password, name
     
+    if key in accounts and value == accounts[key]:
+        return True
+    else: 
+        print("This username doesn't match with the password")
+        return False
+
     
     #returns true if the password and corresponding name exist in the 
     #accounts dicitionary

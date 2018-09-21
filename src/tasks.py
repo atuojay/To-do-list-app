@@ -5,7 +5,7 @@ todo_list = []
 def create_task(task):
     task = input("Add task to list:")
     todo_list.append(task)
-    return todo_list
+    print(todo_list)
 
 # Write a function deletes a task
 def delete_task(task):
@@ -13,7 +13,7 @@ def delete_task(task):
 
     if task <= len(todo_list):
         todo_list.pop(task-1)
-        return todo_list
+        print(todo_list)
     else:
         print("No task has been selected")
     
@@ -24,8 +24,8 @@ def mark_as_finished(task):
     task = int(input("Enter position of finished task:"))
 
     if task <= len(todo_list):
-        todo_list[task-1] + ' [finished]'
-        return todo_list
+        todo_list[task-1] += ' [finished]'
+        print(todo_list)
     else:
         print("No task has been selected")
 
@@ -36,5 +36,6 @@ def mark_as_finished(task):
 # Write a function deletes all tasks
 def delete_all_tasks():
     todo_list.clear()
+    print(todo_list)
 
     #Empty the the todo_lsit
