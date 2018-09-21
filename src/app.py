@@ -48,12 +48,4 @@ if __name__ == "__main__":
             print("Please enter a new name and password to create your account")   
             add_account(name, password)
         
-        #elif choice == '2':
-            #add_account('name', 'password')
-            #continue
-
-        #elif choice == '3':
-            #print("Thanks for using the Todo-list App")
-            #print("Logging off...")
-        #else:
-            #print("Unknown choice!")
+        
