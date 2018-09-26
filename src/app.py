@@ -40,6 +40,8 @@ if __name__ == "__main__":
                     delete_all_tasks()
                 elif selection == '4':
                     mark_as_finished("task")
+                else:
+                    print("No option has been selected. Please select a valid option.")
                         
             else:
                 print("Please register first!")

@@ -9,33 +9,27 @@ def create_task(task):
 
 # Write a function deletes a task
 def delete_task(task):
-    task = int(input("Enter position of task to delete:"))
+    task = input("Enter position of task to delete:")
 
-    if task <= len(todo_list):
-        todo_list.pop(task-1)
+    if task.isdigit() and int(task) <= len(todo_list):
+        todo_list.pop(int(task)-1)
         print(todo_list)
     else:
         print("No task has been selected")
-    
-    #Removes the specified task from the todo_list
 
 # Write a function that marks a task finished
 def mark_as_finished(task):
-    task = int(input("Enter position of finished task:"))
+    task = input("Enter position of finished task:")
 
-    if task <= len(todo_list):
-        todo_list[task-1] += ' [finished]'
+    if task.isdigit() and int(task) <= len(todo_list):
+        todo_list[int(task)-1] += ' [finished]'
         print(todo_list)
     else:
         print("No task has been selected")
-
-    #Append the string label '[finished]' at the end of the task 
-    #if it does not already have the label appended.
-    #It should remain in the todo_list
 
 # Write a function deletes all tasks
 def delete_all_tasks():
     todo_list.clear()
     print(todo_list)
 
-    #Empty the the todo_lsit
+
